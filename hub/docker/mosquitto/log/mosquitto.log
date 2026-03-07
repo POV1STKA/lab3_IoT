@@ -1,0 +1,34 @@
+1772879583: mosquitto version 2.1.2 starting
+1772879583: Config loaded from /mosquitto/config/mosquitto.conf.
+1772879583: Bridge support available.
+1772879583: Persistence support available.
+1772879583: TLS support available.
+1772879583: TLS-PSK support available.
+1772879583: Websockets support available.
+1772879583: Opening ipv4 listen socket on port 1883.
+1772879583: Opening ipv6 listen socket on port 1883.
+1772879583: mosquitto version 2.1.2 running
+1772879584: New connection from 172.20.0.3:47107 on port 1883.
+1772879584: New client connected from 172.20.0.3:47107 as auto-09895A0F-787C-9ABE-0B6D-D009E91666DE (p4, c1, k60).
+1772879928: Client auto-09895A0F-787C-9ABE-0B6D-D009E91666DE [172.20.0.3:47107] disconnected: connection closed by client.
+1772879932: New connection from 172.20.0.3:41355 on port 1883.
+1772879932: New client connected from 172.20.0.3:41355 as auto-C1774CC2-22C1-A8EB-1165-D029F7426201 (p4, c1, k60).
+1772880114: Client auto-C1774CC2-22C1-A8EB-1165-D029F7426201 [172.20.0.3:41355] disconnected: connection closed by client.
+1772880183: New connection from 172.20.0.3:59819 on port 1883.
+1772880183: New client connected from 172.20.0.3:59819 as auto-EEE15DA8-B210-25D0-B197-AE381EB2BAFD (p4, c1, k60).
+1772881384: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772881384: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+
+1772883185: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772883185: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+
+1772884986: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772884986: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+
+1772886787: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1772886787: Warning: File /mosquitto/data//mosquitto.db.new has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/data//mosquitto.db.new`.
+
