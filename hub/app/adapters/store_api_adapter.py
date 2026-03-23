@@ -9,21 +9,20 @@ class StoreApiAdapter(StoreGateway):
         self.api_base_url = api_base_url
 
     def save_data(self, processed_data: ProcessedAgentData):
-        url = f"{self.api_base_url}/agent_data"
-
-        payload = processed_data.model_dump()
+        url = f"{self.api_base_url}/processed_agent_data/"
+        
+        payload = json.loads(processed_data.model_dump_json())
         
         try:
-            res = requests.post(url, json=payload)
+            res = requests.post(url, json=[payload])
             
-            if res.status_code == 201:
-                logging.info("Дані успішно відправлені в API.")
+            if res.status_code in (200, 201):
+                logging.info(f"Дані успішно відправлені в API. Відповідь: {res.text}")
                 return True
-
-            logging.info(f"Запит не пройшов. Статус код: {res.status_code}")
+            
+            logging.info(f"Запит не пройшов. Статус код: {res.status_code}. Тіло: {res.text}")
             return False
             
         except Exception as e:
-            logging.info(f"Виникла помилка при з'єднанні з сервером: {e}")
+            logging.error(f"Виникла помилка при з'єднанні з сервером: {e}")
             return False
-
